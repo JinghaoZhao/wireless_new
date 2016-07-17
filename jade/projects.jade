@@ -1,0 +1,177 @@
+extends _base
+
+block vars
+    -var title = "Projects"
+    -var link = "projects.html"
+    -var link_ch = "projects_ch.html"
+    -var language = "English"
+
+
+block content
+
+    include _header
+
+    div.container
+        h2.page-header Our Projects
+
+        div(style="text-align:center").container
+            h3 An introduction video of our multi-hop network system
+            video(src="http://www.cs.sjtu.edu.cn/~wang-xb/video/video1.mov" ,height="360px", controls="controls")
+            br
+            a.img-rounded.btn-info.btn-default(style="text-align:center",href="http://v.youku.com/v_show/id_XMTM1Nzc4OTY0MA==.html") &nbsp;Watch at Youku &raquo
+        hr
+
+        div(style="text-align:center").container
+            h3 An introduction video of our indoor locating system
+            video(src="http://www.cs.sjtu.edu.cn/~wang-xb/video/video0.mp4" ,height="360px", controls="controls")
+            br
+            a.img-rounded.btn-info.btn-default(style="text-align:center",href="http://v.youku.com/v_show/id_XMTM1NDMyNjk1Ng==.html") &nbsp;Watch at Youku &raquo
+        hr
+
+        div.container
+            h3 INDAPSON: An Incentive Data Plan Sharing System Based on Self-Organizing Network
+            h5 Sponsored by Qualcomm.com
+            img.col-md-4(src="images/phones.jpg"  alt="" width="350" height="262")
+            div.col-md-8
+                p The contradiction between dynamic user traffic and fixed data plans has drawn increasing attention in the field of mobile applications. We build a data plan sharing system named INDAPSON to consider a scenario where some smartphone users have surplus data traffic and are willing to help others download data. Virtual credits can be gained as reward, which can be used to ask for future help in downloading. To realize this model, we make the following contributions: <br/>1.A dynamic self-organization strategy to adapt to mobile terminals;<br/>2.An incentive mechanism named RAP to encourage participation;<br/>3.Power-saving strategies to reduce power consumption<br/>...
+                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/indaps.html") Details &raquo
+        hr
+
+        div.container
+            h3 CityDrive: A Map-Generating and Speed-Optimizing Driving System
+            h5
+            img.col-md-4.col-md-push-8(src="images/dirve.png"  alt="" width="350" height="262")
+            div.col-md-8.col-md-pull-4
+                p There have been many traffic light control systems around the globe, but the high cost of infrastructure and maintenance hinders their wide deployment. However, speed-advisory systems enabled by on-vehicle devices are much cheaper and easier to deploy. The first challenge of such systems is to get the traffic signal schedule in complex intersections. The second challenge is to get map information and calculate the distance.<br/>Facing these challenges we devise and implement a speed-advisory driving system called CityDrive, which harnesses the sensor and GPS data from a wide participation of smartphones to suggest proper speed for drivers so that they arrive at intersections in green phase. CityDrive first generates a road map and then infers traffic signal schedules, using only smartphones and a server. ....
+                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/citydrive.html") Details &raquo
+        hr
+
+        div.container
+            h3 SmartTaxiNet: Mobile Service of Driver-Passenger Matching and Taxicab Scheduling System
+            h5
+            img.col-md-4(src="images/car.png"  alt="" width="350" height="262")
+            div.col-md-8
+                p Taxi dispatching systems have received intense concern in practical usage. However, these systems are usually 1) unable to give a real-time response if drivers or passengers breach the contract 2) inefficient in energy saving because of the first-come-first-serve scheme. These defects may lead to some consequences such as more energy waste and trust crisis.<br/>We propose and implement a mobile computing system called SmartTaxiNet, which not only solves the driver-passenger matching problem efficiently but also provides other strategies, e.g. a skipper detection scheme, to raise clients' contentment. The CabMatch algorithm is designed and applied in the system to perform driver-passenger matching within a complexity of O(n2 log n). Meanwhile, based on the analysis of the accumulated matching data, the system can also estimate potential passenger locations and traffic patterns...
+                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/taxi.html") Details &raquo
+        hr
+
+        div.container
+            h3 HiQuadLoc: An RSS-Based Indoor Localization System for High-Speed Quadrotors
+            h5
+            img.col-md-4.col-md-push-8(src="images/flying.png"  alt="" width="350" height="262")
+            div.col-md-8.col-md-pull-4
+                p Indoor localization for Unmanned Aerial Vehicles (UAVs) such as quadrotors has attracted much attention. However, the low-cost Wi-Fi RSS-based localization has not been applied on the quadrotors mainly because the high-speed flight reduces the number of times for RSS measurement. Moreover, the workload of collecting RSS training data is huge for 3-D indoor localization.<br/>In this study, we build HiQuadLoc, a new RSS-based indoor localization system for high-speed quadrotors. The key idea is leveraging the historical localization results and the motion information of the quadrotors to improve accuracy. During the RSS training data collection, we use interpolation to estimate the probability distributions of different RSS values....
+                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/HiQuadLoc.html") Details &raquo
+        hr
+
+        div.container
+            h3 SAPLOC: An Indoor Localization System Based on Smart Access Points
+            h5
+            img.col-md-4(src="images/smartAP.jpg"  alt="" width="350" height="262")
+            div.col-md-8
+                p Indoor localization based on Wi-Fi fingerprints has been an active research topic in the recent years. However, existing approaches do not consider the instability of unreliable Wi-Fi access points (APs), particularly the ones deployed by individual users. This instability impacts the localization accuracy severely, due to the unreliable or even wrong Wi-Fi fingerprints. Ideally, the localization should be done using only the welldeployed APs (e.g., deployed by the facility team of a building). However, in many places the number of these APs is too few to achieve a good localization accuracy.<br/>To solve this problem, we leverage emerging smart APs equipped with multi-mode antennas, and build a new indoor localization system called SAPLOC to reduce the number of necessary APs. The key idea is controlling the modes of AP antennas to generate more fingerprints with fewer APs. Consequently, SAPLOC achieves a good accuracy using fewer APs, compared to existing approaches....
+                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/SAPLOC.html") Details &raquo
+        hr
+
+        div.container
+            h3 Indoor Localization with a Crowdsourcing based Fingerprints Collecting
+            h5 Joint with Prof. Hui Yu
+            img.col-md-4.col-md-push-8(src="images/Localization.png"  alt="" width="350" height="262")
+            div.col-md-8.col-md-pull-4
+                p Fingerprint matching is adopted by a large family of indoor localization schemes, where collecting fingerprints is inevitable but all consuming. While the increasingly popular crowdsourcing based approach provides an opportunity to relieve the burden of fingerprints collecting, a number of formidable challenges for such an approach have yet been studied.
+                p In this study, we propose a crowdsourcing based fingerprints collecting mechanism for indoor localization systems, where the important challenges including the large data amount, device heterogeneity and real time response are studied and resolved. With our approach, massive raw fingerprints will be divided into small clusters while diverse devices' uploaded fingerprints will be merged to overcome device heterogeneity, both of them will contribute to reduce response time. We build a mobile cloud testbed to verify our proposed scheme, and comprehensive real-world experiment results indicate that our scheme provides comparable localization accuracy.
+                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/localization.html") Details &raquo
+        hr
+
+        div.container
+            h3 Data mining of Sina-Weibo
+            h5
+            img.col-md-4(src="images/weibo.png"  alt="" width="350" height="262")
+            div.col-md-8
+                p Sina-Weibo produces a mass of microblogs every day. These data are very helpful for research with respect to anthropology, social networks, urban planning and other aspects.
+                p Our purpose is to investigate whether there exists a hierarchical structure about the crowd's attention on a site or a region which is similar with the ego networks proposed by an anthropologist named Dunbar. The result can be used in studying human behavior and applied to a recommender system such as a friend recommender system which recommends friends that have the same interest.
+                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/Sinaweibo.html") Details &raquo
+        hr
+
+        div.container
+            h3 Smart car and four-rotor aircraft experiment system
+            h5
+            img.col-md-4.col-md-push-8(src="images/02230170.jpg"  alt="" width="350" height="262")
+            div.col-md-8.col-md-pull-4
+                p The smart cars are equipped with XILINX FPGA. The main control components are ZEDBORAD（XILINX Zynq 7000 FPGA，CORTEX-A9）or NEXYS3 （XILINX Spartan-6 FPGA， ARM CORTEX-M0）.Camera, wireless router, supersonic detector are also available. Functions such as video capture, video transmission, smartphone control can also be easily realized.
+                p The size and weight of a four-rotor aircraft in our experiment system can be changed by restructuring. Flight controllers are used to operate the algorithm of flight attitude control. The aircrafts can act as the carriers for camera, acceleration sensor and other wireless sensors.
+                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/smartcar.html") Details &raquo
+        hr
+
+        div.container
+            h3 VSMC MIMO: A Spectral Efficient Scheme for Cooperative Relay in Cognitive Radio Networks
+            h5
+            img.col-md-4(src="images/mimo.png"  alt="" width="350" height="262")
+            div.col-md-8
+                p Multiple-Input Multiple-Output (MIMO) technology has become an efficient way to improve the capacity and reliability of wireless networks. Traditional MIMO schemes are designed mainly for the scenario of contiguous spectrum ranges. However, in cognitive radio networks, the available spectrum is discontiguous, making traditional MIMO schemes inefficient for spectrum usage. This motivates the design of new MIMO schemes that apply to networks with discontiguous spectrum ranges.
+                p We propose a scheme called VSMC MIMO, which enables MIMO nodes to transmit variable numbers of streams in multiple discontinuous spectrum ranges. This scheme can largely improve the spectrum utilization and meanwhile maintain the same spatial multiplexing and diversity gains as traditional MIMO schemes. To implement this spectral-efficient scheme on cooperative MIMO relays in cognitive radio networks, we propose a joint relay selection and spectrum allocation algorithm and a corresponding MAC protocol for the system. We also build a testbed by the Universal Software Radio Peripherals (USRPs) to evaluate the performances of the proposed scheme in practical networks. The experimental results show that VSMC MIMO can efficiently utilize the discontiguous spectrum and greatly improve the throughput of cognitive radio networks.
+                p The paper about this system has been published in the 34rd Annual IEEE International Conference on Computer Communications (INFOCOM, 2015).
+                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/MIMO.htm") Details &raquo
+        hr
+
+        div.container
+            h3 SIP over IPv6
+            h5 Sponsored by Foxconn.com
+            img.col-md-4.col-md-push-8(src="images/image004.jpg"  alt="" width="350" height="262")
+            div.col-md-8.col-md-pull-4
+                p The Session Initiation Protocol (SIP) is used for controlling communication sessions such as voice and video calls over Internet Protocol (IP). However, most of existing SIP services are implemented over Internet Protocol v4 (IPv4). As the increasing deployment of Internet Protocol v6 (IPv6) network, it is becoming more urging to implement SIP that is compatible with both IPv4 and IPv6. This project designs a network architecture of SIP service, and proposes a way to implement SIP over IPv6 while at the same time keeping compatible with the IPv4. RTPProxy server in the network reencapsulates IPv6 traffic within IPv4 networks and vice versa, which does not require any modification on the user agent and is easy to be implemented.
+                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/sip.html") Details &raquo
+        hr
+
+        div.container
+            h3 The combination of CMMB and cellular networks
+            h5 Joint with Prof. Hui Liu, and Prof. Manyuan Shen
+            img.col-md-4(src="images/image035.png"  alt="" width="350" height="262")
+            div.col-md-8
+                p The hot videos on the Internet can be pushed to mobile terminals via CMMB. When a user wants to watch a video on his/her terminal, our app checks if the very video has been pushed by CMMB. If so, the local video will be played. Otherwise the terminal will play the video on line via cellular networks such as 3G or LTE. For the case that the file of video received through CMMB is corrupted, only the lost data segments will be downloaded through cellular network, and thus the data traffic is saved. It can be expected that the combination of CMMB and cellular networks can improve user experience significantly.
+                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/cmmb.html") Details &raquo
+        hr
+
+        div.container
+            h3 Cognitive network experiment system
+            h5 Joint with Prof. Hui Yu and Prof. Xiaoying Gan
+            h5 Sponsored by Docomo.com and Fujitsu.com, NSF China, 973 Project etc
+            div.col-md-4.col-md-push-8
+                img(src="images/cnet1.png"  ,alt="" width="350" height="262")
+                img(src="images/cnet2.png"  ,alt="" width="350" height="262")
+            div.col-md-8.col-md-pull-4
+                h4 Smart spectrum detection
+                p We have the ability to perform spectrum sensing, channel measurement in the frequency range IEEE802.11a/b/g (including MIMO channel), and wireless data transmission. These can support the cognitive wireless communication experiment in corresponding frequency band.
+                h4 WPAN (IEEE 802.15) development environment
+                p Real-time online simulator can be directly connected to the computer through the USB interface, performing some functions such as code downloads, online debugging.
+                h4 RFID-based multi-mode device
+                p This device consists of ARM embedded development borad, RFID reader module, GSM/GPRS module and WIFI network card, which can be used to recognize labels such as ISO15693, ISO14443, Tag-ItTM. This device has multi-tag reading ability, as well as being able to trafer data, authenticate user and download information through GSM/GPRS/WiFi networks automatically/manually. Based on this device, we can be further developed with multimode IntelliSense WPAN and WMAN interface Terminal and Verify that the Terminal model for CR.
+                h4 WPAN/WMAN/GPRS three mode terminal
+                p We set up a tri-mode terminal which has WiFi / WiMAX / GPRS three network access capability. We develop the basic communication protocol support software , basic network selection function , and the completion of a WiFi network physical layer, MAC layer , network layer information extraction.
+                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/experimentsystem.html") Details &raquo
+        hr
+
+        div.container
+            h3 Space-Air-Ground networks
+            h5 Joint with Prof. Xiaoying Gan
+            img.col-md-4(src="images/BS2.jpg"  alt="" width="251" height="362")
+            div.col-md-8
+                p The Space-Air-Ground networks covers space communications, high-altitude communications and ground communications. It consists of static backbone networks and dynamic non-backbone networks. In the field of ground networks, our college has gotten a lot of practical experience. Cooperating with HUAWEI, a composite network named "Innovative Wireless Campus Networks" has been built in our campus.
+                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/spaceairground.html") Details &raquo
+        hr
+
+        div.container
+            h3 Multi-hop ad-hoc networks
+            h5 Joint with Prof. Feng Yang
+            img.col-md-4.col-md-push-8(src="images/multihop1.jpg"  alt="" width="350" height="262")
+            div.col-md-8.col-md-pull-4
+                p In the areas with no infrastructure, our multi-hop ad-hoc networks can be applied to provide transmission between different nodes. The transmission rate can be higher than 10 Mbps, and the transmission range of a single hop is larger than 30 km. The network is self-organized, and nodes can be replaced at any time without impacting the stability of our network. With all the features above, our system can still work well in a complicated environment.
+                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/multihop.html") Details &raquo
+        hr
+
+        div.container
+            a.img-rounded.btn-info.btn-lg(href="http://iwct.sjtu.edu.cn/Personal/xwang8/system.html") CLICK HERE TO FIND MORE
+
+        br
+
+

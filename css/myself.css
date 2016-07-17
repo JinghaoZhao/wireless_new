@@ -1,0 +1,40 @@
+.col-center-block {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*footer-------------------------------------------------------------------*/
+.footer{
+    font-size: 16px;
+    color: #898989;
+}
+/*indexPage----------------------------------------------------------------------*/
+.indexPage {
+    background: url("../images/wirelessIndex.jpg") no-repeat;
+    background-size: 100% auto;
+}
+.indexImg{
+    width: 100%;
+    height: auto;
+    z-index: -2;
+}
+.indexText{
+    width: 50%;
+    position: relative;
+    padding: 100px;
+}
+.indexText h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    color: #c3c3c3;
+}
+
+.indexText p{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color: #c5c5c5;
+}
+.white{
+    color: white;
+}

@@ -1,0 +1,36 @@
+extends _base
+
+block vars
+    -var title = "Resources"
+
+block content
+    include _header
+    div.container
+        h1.text-center Electronic Resources
+        strong Contact Information
+        ul
+            li Email the instructor:
+                a(href="mailto:xwang8@sjtu.edu.cn") xwang8@sjtu.edu.cn.
+            li Email the TA:
+                a(href="mailto:shazhouzhexue@sina.com") shazhouzhexue@sina.com
+
+        strong Useful website:
+        ul
+            li Course webpage:
+                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/course_2008" target="_top") http://iwct.sjtu.edu.cn/Personal/xwang8/course_2011
+            li Textbook website:
+                a(href="http://williamstallings.com/Wireless/Wireless2e-student.html" target="_top") http://williamstallings.com/Wireless/Wireless2e-student.html
+
+        strong Related Links:
+        ul
+            li Internet Drafts:
+                a(href="http://www.ietf.org/rfc.html" target="_top") IETF RFCs
+            li Sensor Networks:
+                a(href="http://ceng.usc.edu/~bkrishna/teaching/SensorNetBib.html" target="_blank") http://ceng.usc.edu/~bkrishna/teaching/SensorNetBib.html
+            li NS2 Resources:
+                a(href="http://www.isi.edu/nsnam/ns/" target="_blank") NS2 home
+                |,
+                a(href="http://www-sop.inria.fr/mistral/personnel/Eitan.Altman/ns.htm" target="_blank") NS2 for Beginers
+                |,
+                a(href="http://140.116.72.80/~smallko/ns2/ns2.htm" target="_blank") http://140.116.72.80/~smallko/ns2/ns2.htm
+    include _footer
