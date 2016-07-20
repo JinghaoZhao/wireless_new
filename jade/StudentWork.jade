@@ -1,0 +1,38 @@
+extends _base
+
+block vars
+    -var title = "Student Work"
+
+block content
+    include _header
+    div.container .bgwhite
+        h1.text-center.white Student Work
+        br
+        a(href="Junior_normal.html")
+            div.panel.panel-warning.classType
+                div.panel-heading
+                    h3.panel-title
+                        strong 大三普通班
+                div.panel-body
+                    img.autoSize(src="images/people.jpg")
+
+        a(href="Junior_IEEE.html")
+            div.panel.panel-info.classType
+                div.panel-heading
+                    h3.panel-title
+                        strong 大三IEEE班
+                div.panel-body
+                    img.autoSize(src="images/people.jpg")
+
+        a(href="Freshman.html")
+            div.panel.panel-success.classType
+                div.panel-heading
+                    h3.panel-title
+                        strong 大一普通班
+                div.panel-body
+                    img.autoSize(src="images/people.jpg")
+
+
+
+
+    include _footer

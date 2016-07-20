@@ -4,12 +4,29 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+body{
+    background-color: #2f2f2f;
+}
+
+.bgwhite{
+    background-color: white;
+    padding: 30px;
+}
 /*footer-------------------------------------------------------------------*/
 .footer{
     font-size: 16px;
     color: #898989;
 }
 /*indexPage----------------------------------------------------------------------*/
+.widthMax {
+    width: 1200px;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .indexPage {
     background: url("../images/wirelessIndex.jpg") no-repeat;
     background-size: 100% auto;
@@ -20,9 +37,10 @@
     z-index: -2;
 }
 .indexText{
-    width: 50%;
+    width: 40%;
     position: relative;
-    padding: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
 }
 .indexText h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -37,4 +55,40 @@
 }
 .white{
     color: white;
+}
+/*Student Work-------------------------------------------------------------------------*/
+.classType{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    float: left;
+    width:300px;
+    height: 300px;
+}
+
+.pptType{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    float: left;
+    width:300px;
+    height: 330px;
+}
+
+.autoSize{
+    width: 100%;
+    height: 90%;
+}
+
+.proText{
+    line-height: 17pt;
+}
+
+.freshType{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    float: left;
+    width:300px;
+    height: 150px;
 }
