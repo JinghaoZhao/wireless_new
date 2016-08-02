@@ -5,69 +5,22 @@ block vars
 
 block content
     include _header
-    div.container.proText
-        h1.text-center.white Freshman IEEE Class
+    div.container
+        h1.text-center.white Student Work
         br
-        div.alert.alert-info.freshType
-            h3 Group1:Next Level Tic-Tac-Toe
-            a.button.button-glow.button-border.button-rounded.button-primary(href="material/PPT/Freshman/group1.pptx") PPT
-            |&nbsp;&nbsp;&nbsp;&nbsp;
-            a.button.button-glow.button-border.button-rounded.button-action(href="material/projects/Freshman/1.rar") Project
-        div.alert.alert-success.freshType
-            h3 Group2:MAGIC 2048
-            a.button.button-glow.button-border.button-rounded.button-primary(href="material/PPT/Freshman/group2.pptx") PPT
-            |&nbsp;&nbsp;&nbsp;&nbsp;
-            a.button.button-glow.button-border.button-rounded.button-action(href="material/projects/Freshman/2.rar") Project
-        div.alert.alert-warning.freshType
-            h3 Group3:JiaoDaMurder
-            a.button.button-glow.button-border.button-rounded.button-primary(href="material/PPT/Freshman/group3.exe") PPT
-            |&nbsp;&nbsp;&nbsp;&nbsp;
-            a.button.button-glow.button-border.button-rounded.button-action(href="material/projects/Freshman/3.zip") Project
-        div.alert.alert-danger.freshType
-            h3 Group4:Hua Rong Road
-            a.button.button-glow.button-border.button-rounded.button-primary(href="material/PPT/Freshman/group4.pptx") PPT
-            |&nbsp;&nbsp;&nbsp;&nbsp;
-            a.button.button-glow.button-border.button-rounded.button-action(href="material/projects/Freshman/4.rar") Project
-        div.alert.alert-info.freshType
-            h3 Group5:Facegod
-            a.button.button-glow.button-border.button-rounded.button-primary(href="material/PPT/Freshman/group5.pptx") PPT
-            |&nbsp;&nbsp;&nbsp;&nbsp;
-            a.button.button-glow.button-border.button-rounded.button-action(href="material/projects/Freshman/5.zip") Project
-        div.alert.alert-success.freshType
-            h3 Group6:TaskMaster
-            a.button.button-glow.button-border.button-rounded.button-primary(href="material/PPT/Freshman/group6.pptx") PPT
-            |&nbsp;&nbsp;&nbsp;&nbsp;
-            a.button.button-glow.button-border.button-rounded.button-action(href="material/projects/Freshman/6.rar") Project
-        div.alert.alert-warning.freshType
-            h3 Group7:Werewolf
-            a.button.button-glow.button-border.button-rounded.button-primary(href="material/PPT/Freshman/group7.pptx") PPT
-            |&nbsp;&nbsp;&nbsp;&nbsp;
-            a.button.button-glow.button-border.button-rounded.button-action(href="material/projects/Freshman/7.rar") Project
-        div.alert.alert-danger.freshType
-            h3 Group8:BLUETOOTH  WECHAT
-            a.button.button-glow.button-border.button-rounded.button-primary(href="material/PPT/Freshman/group8.pptx") PPT
-            |&nbsp;&nbsp;&nbsp;&nbsp;
-            a.button.button-glow.button-border.button-rounded.button-action(href="material/projects/Freshman/8.zip") Project
-        div.alert.alert-info.freshType
-            h3 Group9:Auto Chat Robot
-            a.button.button-glow.button-border.button-rounded.button-primary(href="material/PPT/Freshman/group9.pptx") PPT
-            |&nbsp;&nbsp;&nbsp;&nbsp;
-            a.button.button-glow.button-border.button-rounded.button-action(href="material/projects/Freshman/9.rar") Project
-        div.alert.alert-info.freshType
-            h3 Group10:BOXBOX
-            a.button.button-glow.button-border.button-rounded.button-primary(href="material/PPT/Freshman/group10.pptx") PPT
-            |&nbsp;&nbsp;&nbsp;&nbsp;
-            a.button.button-glow.button-border.button-rounded.button-action(href="material/projects/Freshman/10.zip") Project
-        div.alert.alert-success.freshType
-            h3 Group11:Book exchange
-            a.button.button-glow.button-border.button-rounded.button-primary(href="material/PPT/Freshman/group11.pptx") PPT
-            |&nbsp;&nbsp;&nbsp;&nbsp;
-            a.button.button-glow.button-border.button-rounded.button-action(href="material/projects/Freshman/11.rar") Project
-        div.alert.alert-warning.freshType
-            h3 Group12:S-Note
-            a.button.button-glow.button-border.button-rounded.button-primary(href="material/PPT/Freshman/group12.pptx") PPT
-            |&nbsp;&nbsp;&nbsp;&nbsp;
-            a.button.button-glow.button-border.button-rounded.button-action(href="material/projects/Freshman/12.rar") Project
+        a(href="Freshman_pro.html")
+            div.totleType
+                h3
+                    strong PPT & Report
+                img.autoSize(src="images/pptx.png")
 
+        a(href="Freshman_video.html")
+            div.totleType
+                h3
+                    strong Video
+                img.autoSize(src="images/video.png")
+
+
+    br.clear
 
     include _footer
