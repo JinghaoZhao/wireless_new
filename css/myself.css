@@ -12,7 +12,10 @@
 }
 
 body{
-    background-color: #2f2f2f;
+    /*background-color: #dddddd;*/
+    /*background: url("../images/paperback.png") repeat;*/
+    /*background: url("../images/wirelessIndex.jpg") repeat-y;*/
+    background: linear-gradient(75deg,  rgba(2, 190, 255, 0.99),#06ffab);
 }
 
 .bgwhite{
@@ -23,14 +26,40 @@ body{
 .clear{
     clear: both;
 }
+/*------------------------------------header--------------------------------*/
+.button-3d{
+    color: black;
+}
+.button-info{
+    background-color: #4af7e7;
+    border-color: #4aeeff;
+    color: #FFF;
+    -webkit-box-shadow: 0 7px 0 #34a597, 0 8px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 7px 0 #31a195, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+.button-yellow{
+    background-color: #f7f136;
+    border-color: #fff560;
+    color: #FFF;
+    -webkit-box-shadow: 0 7px 0 #b6b028, 0 8px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 7px 0 #bab04a, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+.nav-link{
+    color: black;
+}
+.navbar-default .navbar-nav>li>a{
+    color: #000000;
+    font-weight: 600;
+}
+
 /*footer-------------------------------------------------------------------*/
 .footer{
     font-size: 16px;
-    color: #898989;
+    color: #4a4a4a;
 }
 /*indexPage----------------------------------------------------------------------*/
 .widthMax {
-    width: 1200px;
+    width: 1400px;
     float: none;
     display: block;
     margin-left: auto;
@@ -38,8 +67,12 @@ body{
 }
 
 .indexPage {
-    background: url("../images/wirelessIndex.jpg") no-repeat;
-    background-size: 100% auto;
+    background: url("../images/homepage/mt.jpg") no-repeat;
+    opacity: 1.0;
+    /*background: transparent;*/
+    /*background: linear-gradient(75deg, #00E39F, #00C4E1);*/
+    background-size: 100% auto
+;
 }
 .indexImg{
     width: 100%;
@@ -47,24 +80,33 @@ body{
     z-index: -2;
 }
 .indexText{
-    width: 40%;
+    /*width: 40%;*/
     position: relative;
     padding-left: 100px;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 .indexText h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 40px;
-    color: #c3c3c3;
+    color: #000000;
 }
 
 .indexText p{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
-    color: #c5c5c5;
+    color: #000000;
 }
 .white{
     color: white;
+}
+.indexWifi{
+    padding: 100px 200px 50px;
+}
+.indexBlockButton{
+    margin:30px;
+    float: left;
+    width:350px;
+    height: 200px;
 }
 /*Student Work-------------------------------------------------------------------------*/
 .classType{
@@ -112,7 +154,7 @@ body{
     margin-top: 30px;
     float: left;
     width:300px;
-    height: 340px;
+    height: 380px;
 }
 
 .autoSize{
@@ -175,4 +217,38 @@ body{
 .black {
     color: black;
     font-size: 20px;
+}
+
+/* -----------------------------------------School List-------------------------*/
+.schoolType{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    float: left;
+    width:240px;
+    height: 320px;
+}
+
+.panel-body h3 {
+    position: relative;
+    top: -50px;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    background: #939393;
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 1em;
+    -webkit-transition: -webkit-transform 0.2s, background 0.2s;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.panel-body h3:hover {
+    background: #70bef3;
+    color: #fff;
 }

@@ -1,0 +1,38 @@
+extends _base
+
+block vars
+    -var title = "School List"
+
+block content
+    include _header
+    div.container
+        h1.text-center
+            strong Course Information
+        a(href="coursePages/PKU_Wireless_Networking.html")
+            div.panel.panel-warning.schoolType
+                div.panel-heading
+                    h3.panel-title
+                        strong Peking University
+                div.panel-body
+                    img.autoSize(src="images/schoollogo/pku.png")
+                    h3 Wireless Networking
+        a(href="coursePages/PKU_Computer_Networks.html")
+            div.panel.panel-warning.schoolType
+                div.panel-heading
+                    h3.panel-title
+                        strong Peking University
+                div.panel-body
+                    img.autoSize(src="images/schoollogo/pku.png")
+                    h3 Computer Networks
+        a(href="coursePages/Beijingligong_Software_Engineering.html")
+            div.panel.panel-warning.schoolType
+                div.panel-heading
+                    h3.panel-title
+                        strong Beijing Institute of Technology
+                div.panel-body
+                    img.autoSize(src="images/schoollogo/beijingligong.jpg")
+                    h3 Software Engineering
+
+
+
+    include _footer
