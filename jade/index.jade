@@ -8,25 +8,29 @@ block vars
 block content
     include _header
     div.container-fluid.indexPage
-        div.col-sm-6.col-sm-push-1.indexText.text-left
-            h1.text-capitalize
-                strong Wireless communication and mobile networks
-            br
-            p
-                strong This course provides an introduction to wireless networking, including fundamental principles, architectures, and techniques.
-        div.col-sm-6.indexWifi
-            img(src='images/homepage/wifi.png')
-
         div.container
-            div.col-sm-4
+            div.col-xs-6.col-xs-push-1.indexText.text-left
+                h1.text-capitalize
+                    strong Wireless communication and mobile networks
+                br
+                p
+                    strong This course provides an introduction to wireless networking, including fundamental principles, architectures, and techniques.
+            div.col-xs-5.indexWifi
+                img(src='images/homepage/wifi.png')
+
+        div.container.index-block-group
+            div.col-xs-4
                 a.zoomimg.indexBlockButton(href='schoolList.html')
                     img.img-thumbnail.autoSize(src='images/homepage/schoollist.jpg')
-            div.col-sm-4
+            div.col-xs-4
                 a.zoomimg.indexBlockButton(href='GeneralInfo.html')
                     img.img-thumbnail.autoSize(src='images/homepage/courseinfo.jpg')
-            div.col-sm-4
+            div.col-xs-4
                 a.zoomimg.indexBlockButton(href='studentwork.html')
                     img.img-thumbnail.autoSize(src='images/homepage/studentwork.png')
+        br
+        br
+
         include _footer
 
 
