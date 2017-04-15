@@ -10,8 +10,8 @@ if (typeof jQuery === 'undefined') {
 
 +function ($) {
   'use strict';
-  var version = $.fn.jquery.split(' ')[0].split('.')
-  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1)) {
+  var version = $.fn.jquery.split(' ')[0].split('.');
+  if ((version[0] < 2 && version[1] < 9) || (version[0] === 1 && version[1] === 9 && version[2] < 1)) {
     throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher')
   }
 }(jQuery);
@@ -32,14 +32,14 @@ if (typeof jQuery === 'undefined') {
   // ============================================================
 
   function transitionEnd() {
-    var el = document.createElement('bootstrap')
+    var el = document.createElement('bootstrap');
 
     var transEndEventNames = {
       WebkitTransition : 'webkitTransitionEnd',
       MozTransition    : 'transitionend',
       OTransition      : 'oTransitionEnd otransitionend',
       transition       : 'transitionend'
-    }
+    };
 
     for (var name in transEndEventNames) {
       if (el.style[name] !== undefined) {
@@ -52,18 +52,18 @@ if (typeof jQuery === 'undefined') {
 
   // http://blog.alexmaccaw.com/css-transitions
   $.fn.emulateTransitionEnd = function (duration) {
-    var called = false
-    var $el = this
-    $(this).one('bsTransitionEnd', function () { called = true })
-    var callback = function () { if (!called) $($el).trigger($.support.transition.end) }
-    setTimeout(callback, duration)
+    var called = false;
+    var $el = this;
+    $(this).one('bsTransitionEnd', function () { called = true });
+    var callback = function () { if (!called) $($el).trigger($.support.transition.end) };
+    setTimeout(callback, duration);
     return this
-  }
+  };
 
   $(function () {
-    $.support.transition = transitionEnd()
+    $.support.transition = transitionEnd();
 
-    if (!$.support.transition) return
+    if (!$.support.transition) return;
 
     $.event.special.bsTransitionEnd = {
       bindType: $.support.transition.end,
@@ -91,37 +91,37 @@ if (typeof jQuery === 'undefined') {
   // ALERT CLASS DEFINITION
   // ======================
 
-  var dismiss = '[data-dismiss="alert"]'
+  var dismiss = '[data-dismiss="alert"]';
   var Alert   = function (el) {
     $(el).on('click', dismiss, this.close)
-  }
+  };
 
-  Alert.VERSION = '3.3.5'
+  Alert.VERSION = '3.3.5';
 
-  Alert.TRANSITION_DURATION = 150
+  Alert.TRANSITION_DURATION = 150;
 
   Alert.prototype.close = function (e) {
-    var $this    = $(this)
-    var selector = $this.attr('data-target')
+    var $this    = $(this);
+    var selector = $this.attr('data-target');
 
     if (!selector) {
-      selector = $this.attr('href')
+      selector = $this.attr('href');
       selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
     }
 
-    var $parent = $(selector)
+    var $parent = $(selector);
 
-    if (e) e.preventDefault()
+    if (e) e.preventDefault();
 
     if (!$parent.length) {
       $parent = $this.closest('.alert')
     }
 
-    $parent.trigger(e = $.Event('close.bs.alert'))
+    $parent.trigger(e = $.Event('close.bs.alert'));
 
-    if (e.isDefaultPrevented()) return
+    if (e.isDefaultPrevented()) return;
 
-    $parent.removeClass('in')
+    $parent.removeClass('in');
 
     function removeElement() {
       // detach from parent, fire event then clean up data
@@ -133,7 +133,7 @@ if (typeof jQuery === 'undefined') {
         .one('bsTransitionEnd', removeElement)
         .emulateTransitionEnd(Alert.TRANSITION_DURATION) :
       removeElement()
-  }
+  };
 
 
   // ALERT PLUGIN DEFINITION
@@ -141,27 +141,27 @@ if (typeof jQuery === 'undefined') {
 
   function Plugin(option) {
     return this.each(function () {
-      var $this = $(this)
-      var data  = $this.data('bs.alert')
+      var $this = $(this);
+      var data  = $this.data('bs.alert');
 
-      if (!data) $this.data('bs.alert', (data = new Alert(this)))
-      if (typeof option == 'string') data[option].call($this)
+      if (!data) $this.data('bs.alert', (data = new Alert(this)));
+      if (typeof option === 'string') data[option].call($this)
     })
   }
 
-  var old = $.fn.alert
+  var old = $.fn.alert;
 
-  $.fn.alert             = Plugin
-  $.fn.alert.Constructor = Alert
+  $.fn.alert             = Plugin;
+  $.fn.alert.Constructor = Alert;
 
 
   // ALERT NO CONFLICT
   // =================
 
   $.fn.alert.noConflict = function () {
-    $.fn.alert = old
+    $.fn.alert = old;
     return this
-  }
+  };
 
 
   // ALERT DATA-API
