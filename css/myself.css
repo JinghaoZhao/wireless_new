@@ -124,6 +124,11 @@ body{
     width:100%;
     height: 200px;
 }
+
+.whats-new {
+    margin: 5px;
+    font-size: large;
+}
 /*Student Work-------------------------------------------------------------------------*/
 .classType{
     margin-left: 40px;
