@@ -1,0 +1,562 @@
+<!DOCTYPE html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../css/buttons.css" type="text/css" />
+    <link rel="stylesheet" href="../css/myself.css" type="text/css" />
+    <title>Course</title><script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+</head>
+<body id="top">
+<div class="widthMax">
+    <nav class="navbar navbar-default">
+        <!--navbar-header-->
+        <div class="navbar-header"><a href="../index.html" class="navbar-brand">Wireless Course</a></div>
+        <!--links-->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../GeneralInfo.html" class="nav-link button button-3d button-primary">General Info</a></li>
+                <li><a href="../schoolList.html" class="nav-link button button-3d button-info">School List</a></li>
+                <li><a href="../Schedule.html" class="nav-link button button-3d button-action">Schedule & Requirements</a></li>
+                <li><a href="../Announcements.html" class="nav-link button button-3d button-highlight">Announcements</a></li>
+                <li><a href="../Projects.html" class="nav-link button button-3d button-yellow">Projects</a></li>
+                <li><a href="../Resources.html" class="nav-link button button-3d button-caution">Resources</a></li>
+                <li><a href="../studentwork.html" class="nav-link button button-3d button-info">Student Work</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <!--Head-->
+        <h1 class="text-center">CS395T: Wireless Networking (Fall 2006)</h1>
+        <br><br>
+        <!--Part Template-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Course Information</h3>
+            </div>
+            <div class="panel-body">
+                <h1 align="left"><font size="4">Instructor:<span style="font-weight: 400;">
+                </span></font><font size="4"><span style="font-weight: 400;">
+                <a href="http://www.cs.utexas.edu/%7Elili">Lili Qiu</a>, ACES 6.242,
+                <a href="mailto://cs.utexas.edu/">lili@cs.utexas.edu</a></span><br>
+                    Lecture:<span style="font-weight: 400;"> Monday &amp; Wednesday 3:00 - 4:30 PM @TAYLOR 2.106 <br>
+                </span>Instructor's office hour:<span style="font-weight: 400;">
+                        Monday &amp;Wednesday 4:30 - 5:30PM @ ACES 6.242</span><br>
+                    TA: Feng Wang, wangf@cs.utexas.edu, office hour: Tuesday 1-2pm &amp;
+                    Thursday 2-3 PM, ESB 229, Desk #1 <br>
+                    Class ID: <span style="font-weight: 400;">56650</span></font></h1>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Overview</h3>
+            </div>
+            <div class="panel-body">
+                <p>Wireless networks have gone through an unprecedented growth in the past few
+                    years, and will continue to play an indispensable role in future data
+                    communication. In the first part of the course, you will learn fundamentals in
+                    wireless networks ranging from physical layer to application layer. In the
+                    second part of the course, we will discuss research challenges and state-of-art
+                    approaches in medium access, routing, transport protocols, topology control,
+                    location management, wireless network management and security. Through class
+                    lectures, homework, paper reading, and presentation, you will gain a broad
+                    understanding of&nbsp; the current technology and research efforts in wireless
+                    networking, as well as further developing skill for oral presentation and
+                    writing research critiques. In addition, students are expected to accomplish a
+                    well-defined research project in a group of 2-3 to obtain experience in
+                    designing and evaluating protocols and/or techniques for wireless networks.</p>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Grading</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li dir="ltr">
+                        <p dir="ltr" align="left"><b>Mid-term (25%): </b>This is the only exam we
+                            will have.
+                        </p></li><li dir="ltr">
+                    <p dir="ltr" align="left"><b>Homework (30%):</b> All the
+                        homework are due before class. Homework takes one of the following three
+                        forms: (i) paper-pencil exercises, (ii) programming assignments, and (iii)
+                        paper reviews. For the second half of the class, we will discuss two papers
+                        per class. You are expected to read both papers, and write a detailed review
+                        for one paper of your choice for each class. Please use
+                        <a href="http://www.cs.utexas.edu/%7Elili/classes/F05/review-form.htm">this
+                            review form template</a> for your reviews.
+                    </p></li><li dir="ltr">
+                    <p dir="ltr" align="left"><b>Class participation (5%): </b>You are expected
+                        to attend all the classes. If you cannot come to the class for some reason,
+                        please let me know in advance. Everyone is expected to contribute to class
+                        discussion, share opinions, and ask interesting questions. &nbsp;
+                    </p></li><li dir="ltr">
+                    <p dir="ltr" align="left"><b>Course project (40%):</b> A major component in
+                        this course is to accomplish a well-defined research project in the area of
+                        wireless networking. You can work in a group of 2 to define and complete a
+                        project. I will hand out a list of project ideas for you to choose from. You
+                        also have the option to come up with your own topic, which needs to be
+                        approved by me. You are expected to write a mid-point report, a final
+                        report, and also present your work in class. Your grade will be based on
+                        your project reports and oral presentation in terms of originality, quality
+                        of execution, and clarity of presentation.&nbsp;
+                    </p></li><li dir="ltr">
+                    <p dir="ltr" align="left"><b><font color="#ff0000">We will strictly enforce
+                    </font><a href="http://www.cs.utexas.edu/%7Eear/CodeOfConduct.html">
+                        <font color="#ff0000">UTCS code of conduct.</font></a></b>
+                    </p></li></ul>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Textbook</h3>
+            </div>
+            <div class="panel-body">
+                <ul dir="ltr">
+                    <li dir="ltr">
+                        <p dir="ltr" align="left"><font size="3"><span style="font-weight: 400;">
+	Required textbook:
+	<a href="http://www.amazon.com/gp/product/0321123816/sr=1-1/qid=1137642266/ref=pd_bbs_1/002-2615608-2604027?_encoding=UTF8">
+	Mobile Communications by Jochen Schiller, Addison-Wesley</a></span></font><a href="http://www.amazon.com/gp/product/0321123816/sr=1-1/qid=1137642266/ref=pd_bbs_1/002-2615608-2604027?_encoding=UTF8">
+                        </a>
+                        </p></li><li dir="ltr">
+                    <p dir="ltr" align="left">Recommended <font size="3">
+                        <span style="font-weight: 400;">references:</span></font>
+                    </p><ul dir="ltr">
+                    <li dir="ltr">
+                        <p dir="ltr" align="left"><font size="3"><span style="font-weight: 400;">
+		<a href="http://www.amazon.com/gp/product/0130422320/qid=1137642312/sr=2-1/ref=pd_bbs_b_2_1/002-2615608-2604027?s=books&amp;v=glance&amp;n=283155">
+		Wireless Communications: Principles and Practice by Theodore S.
+		Rappaport, Prentice Hall</a></span></font>
+                        </p></li><li dir="ltr">
+                    <p dir="ltr" align="left">
+                        <a href="http://www.amazon.com/gp/product/0596100523/qid=1137642389/sr=2-1/ref=pd_bbs_b_2_1/002-2615608-2604027?s=books&amp;v=glance&amp;n=283155">
+                            802.11 Wireless Networks: The Definitive Guide by Matthew Gast </a>
+                    </p></li><li dir="ltr">
+                    <p dir="ltr" align="left">Many of the readings in this
+                        course are from online
+                        conference proceedings and journals.
+                    </p></li></ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Homework</h3>
+            </div>
+            <div class="panel-body">
+                <p><a href="http://www.cs.utexas.edu/%7Elili/classes/F06/hw/hw1.ps">Homework 1</a></p>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Mailing List</h3>
+            </div>
+            <div class="panel-body">
+                <p>Our course mailing list is <a href="mailto://lists.cc.utexas.edu/">
+                    cs395t-wireless2006@lists.cc.utexas.edu</a>.&nbsp;</p>
+                <ul>
+                    <li dir="ltr">
+                        <p dir="ltr">To subscribe, send an email to
+                            <a href="mailto://lists.cc.utexas.edu/">listproc@lists.cc.utexas.edu</a>
+                            with the following message in the email body:<br>
+                            <font face="Arial" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; subscribe cs395t-wireless2006
+                                YourFirstName YourLastName</font>
+                        </p></li><li dir="ltr">
+                    <p dir="ltr">To unsubscribe, send an email message to
+                        <a href="mailto://lists.cc.utexas.edu/">listproc@lists.cc.utexas.edu</a>
+                        with the following message in the email body: <br>
+                        <font face="Arial" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unsubscribe cs395t-wireless2006 <br>
+                        </font>The subject field of your messages is ignored.
+                    </p></li></ul>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Class schedule</h3>
+            </div>
+            <div class="panel-body">
+                <table id="table1" border="1" width="100%">
+                    <tbody><tr>
+                        <td width="7%">Date</td>
+                        <td align="center" width="25%">Topics</td>
+                        <td width="67%">
+                            <p align="center">Reading material</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" width="99%">Part 1: Introduction to wireless
+                            networks</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">8/30</td>
+                        <td align="left" width="25%">Course Overview
+                            and Physical Layer (<a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/lecture1.ppt">ppt</a>, <a href="http://www.cs.utexas.edu/%7Elili/classes/F06/slides/lecture1.pdf">pdf</a>)</td>
+                        <td width="67%">Schiller Chapter 2</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">9/4</td>
+                        <td colspan="2" align="left" width="92%">
+                            <p align="center">Labor Day</p></td>
+                    </tr>
+                    <tr>
+                        <td height="59" width="7%">9/6</td>
+                        <td align="left" height="59" width="25%">Introduction to MAC and
+                            IEEEE 802.11 (<a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/wifi.ppt">ppt</a>,<a href="http://www.cs.utexas.edu/%7Elili/classes/F06/slides/wifi.pdf">pdf</a>)</td>
+                        <td height="59" width="67%">Suggested readings: <br>
+                            802.11 Wireless Networks: The Definitive Guide, Chapter 2 &amp; 3 <br>
+                            V. Bharghavan, A. Demers, S. Shenker ,
+                            and L. Zhang. <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/MACAW.pdf">MACAW: A Media Access Protocol for Wireless LANs</a> , In
+                            Proc. ACM SIGCOMM , London, U.K., September 1994, pp. 212-225. &nbsp;<br>
+                            IEEE 802.11 standard [<a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/802.11-1999.pdf">pdf</a>]</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">9/8</td>
+                        <td align="left" width="25%">Channel
+                            assignment and channel hopping (<a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/channel-assignment.ppt">ppt</a>,<a href="http://www.cs.utexas.edu/%7Elili/classes/F06/slides/channel-assignment.pdf">pdf</a>)</td>
+                        <td width="67%">Suggested readings:<br>
+                            Arunesh Mishra, Vladimir Brik, Suman Banerjee, Aravind, Srinivasan,
+                            William Arbaugh. <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/clientdriven.pdf">A Client-driven
+                                Approach for Channel Management in Wireless LANs</a>. IEEE Infocom,
+                            Barcelona, Spain, 2006. <br>
+                            Victor Bahl, Ranveer Chandra, and John Dunagan.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/9.pdf">SSCH: Slotted Seeded Channel Hopping for Capacity Improvement in
+                                IEEE 802.11 Ad-Hoc Wireless Networks&nbsp; <font color="#000000">
+			<span style="text-decoration: none;">Proc. of
+			ACM Mobicom 2004, Sept.-Oct. 2004.</span></font></a></td>
+                    </tr>
+                    <tr>
+                        <td width="7%">9/11</td>
+                        <td colspan="2" align="left" width="92%">Presentations by Mi Kyung
+                            Han and Eric Rozner</td>
+                    </tr>
+                    <tr>
+                        <td height="24" width="7%">9/18</td>
+                        <td align="left" height="24" width="25%">Power control and rate
+                            control (<a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/ssch-power-rate.ppt">ppt</a>,<a href="http://www.cs.utexas.edu/%7Elili/classes/F06/slides/ssch-power-rate.pdf">pdf</a>)</td>
+                        <td height="24" width="67%">Suggested readings:<br>
+                            Roger Wattenhofer, Li Erran Li, Victor Bahl and Yi-Min Wang,
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/7.ps">
+                                Distributed Topology Control for Power Efficient Operation in
+                                Multihop Wireless Ad Hoc Networks</a>. Proc. of IEEE INFOCOM<i>, </i>
+                            pages 1388-1397, April 2001. <br>
+                            Martin Heusse, Franck Rousseau, Gilles Berger-Sabbatel, and Andrzej
+                            Duda.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/5.pdf">
+                                Performance Anomaly of 802.11b.</a> In Proc. of IEEE INFOCOM, March
+                            2003.<br>
+                            Starsky H.Y. Wong, Hao
+                            Yang, Songwu Lu, and Vaduvur Bharghavan. Robust Rate Adaptation in 802.11
+                            Wireless Networks. In Proc. of ACM Mobicom, Sept, 2006.</td>
+                    </tr>
+                    <tr>
+                        <td height="24" width="7%">9/20</td>
+                        <td align="left" height="24" width="25%">Multi-radio (<a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/mup-mrd.ppt">ppt</a>,<a href="http://www.cs.utexas.edu/%7Elili/classes/F06/slides/mup-mrd.pdf">pdf</a>)</td>
+                        <td height="24" width="67%">Suggested readings:<br>
+                            A. Adya, P. Bahl, J. Padhye, A. Wolman, and L. Zhou,
+                            <a target="_blank" href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/11.pdf">
+                                A Multi-Radio Unification Protocol for IEEE 802.11 Wireless Networks</a>,
+                            IEEE Conference on Broadband Networks (BroadNets), Oct. 2004.<br>
+                            Allen Miu, Hari Balakrishnan, and Can Emre Koksal.
+                            <a class="boldlink" href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/12.pdf">
+                                Improving Loss Resilience with Multi-Radio Diversity in Wireless
+                                Networks.</a> In Proc. of ACM MobiCom 2005, Aug. - Sept., 2005.<br>
+                            E. Shih, P. Bahl, and M. Sinclair.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/wake-on-wireless.pdf">Wake on Wireless: An Event
+                                Driven Energy Saving Strategy for Battery Operated Devices. </a>In
+                            Proc. of ACM Mobicom, 2002.</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">9/22</td>
+                        <td align="left" width="25%">Introduction to network layer, mobile
+                            IP, and naming (<a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/network-mobileIP.ppt">ppt</a>, <a href="http://www.cs.utexas.edu/%7Elili/classes/F06/slides/network-mobileIP.pdf">pdf</a>)</td>
+                        <td width="67%">Suggested readings:<br>
+                            Schiller Chapter 8.1<br>
+                            Charles E. Perkins, "<a href="http://ieeexplore.ieee.org/iel3/4236/14306/00656077.pdf">Mobile
+                                Networking through Mobile IP.</a>" <i>IEEE Internet Computing</i>, January 1998. Pages 58-69<font color="#000000" face="arial, verdana,Helvetica,sans-serif" size="-1"><br>
+                            </font><font color="#000000" face="Times New Roman"><a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/naming.pdf">Persistent Personal Names for Globally Connected Mobile Devices.</a>
+                                Bryan Ford, Jacob Strauss, Chris Lesniewski-Laas, Sean Rhea, Frans
+                                Kaashoek, and Robert Morris. In Proc. of OSDI, Nov. 2006.</font></td>
+                    </tr>
+                    <tr>
+                        <td width="7%">9/25</td>
+                        <td align="left" width="25%">Routing in mobile
+                            networks <br> (Adopted from Nitin Vaidya's tutorial
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/dsr-aodv.pdf">pdf</a>)</td>
+                        <td width="67%">Suggested readings:<br>
+                            David B. Johnson and David A. Maltz.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/johnson96dynamic.pdf">
+                                Dynamic Source Routing in Ad Hoc Wireless Networks.</a> Mobile
+                            Computing, 1996.<br>
+                            Charles E. Perkins and Elizabeth M. Royer.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/14.ps">
+                                Ad hoc On-Demand Distance Vector Routing. </a>Proc. of the 2nd IEEE
+                            Workshop on Mobile Computing Systems and Applications, New Orleans,
+                            LA, February 1999, pp. 90-100.<br>
+                            Charles E. Perkins and Pravin Bhagwat,"<a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/dsdv.pdf">Highly
+                                Dynamic Destination-Sequenced Distance-Vector Routing (DSDV) for
+                                Mobile Computers.</a>" Proc. of ACM SIGCOMM, August 1994, London,
+                            United Kingdom.&nbsp; </td>
+                    </tr>
+                    <tr>
+                        <td width="7%">10/2</td>
+                        <td align="left" width="25%">Transport
+                            protocol in wireless networks (<a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/wireless-TCP.ppt">ppt</a>,<a href="http://www.cs.utexas.edu/%7Elili/classes/F06/slides/wireless-TCP.pdf">pdf</a>)</td>
+                        <td width="67%">Suggested readings: <br>
+                            Hari Balakrishnan, Venkat Padmanabhan, Srinivasan Seshan, and Randy
+                            H. Katz.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/19.ps">A
+                                Comparison of Mechanisms for Improving TCP Performance over Wireless
+                                Links.</a> IEEE/ACM Transactions on Networking, December 1997.<br>
+                            <span style="white-space: nowrap;">Hung-Yun</span> Hsieh,
+                            <span style="white-space: nowrap;">Kyu-Han</span> Kim, Yujie Zhu, and
+                            Raghupathy Sivakumar.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/20.pdf">
+                                A Receiver-Centric Transport Protocol for Mobile Hosts with
+                                Heterogeneous Wireless Interfaces.</a> In Proc. of MobiCom 2003,
+                            Sept. 2003.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" width="99%">Part 2: Different types of wireless networks</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">10/4</td>
+                        <td rowspan="2" align="left" width="25%">Wireless mesh networks (<a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/etx-wcett-exor-xor.pdf">ETX, WCETT, ExoR,
+                            XORs</a>)</td>
+                        <td width="67%">Douglas S. J. De Couto, Daniel Aguayo, John Bicket,
+                            Robert Morris.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/15.pdf">
+                                A High-Throughput Path Metric for Multi-Hop Wireless Routing.</a>
+                            Proc. of ACM Mobicom 2003.<br>
+                            Richard Draves, Jitendra Padhye, and Brian
+                            Zill.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/mobicom2004.pdf">
+                                Routing in Multi-radio, Multi-hop Wireless
+                                Mesh Network.</a> Proc. of ACM Mobicom
+                            2004.</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">10/9</td>
+                        <td width="67%">
+                            <div>
+                                Sanjit Biswas, and Robert Morris.
+                                <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/16.pdf">
+                                    ExOR: Opportunistic Multi-Hop Routing for Wireless Networks</a>
+                                In Proc. of ACM SIGCOMM, August 2005.<br>
+                                Sachin
+                                Katti, Hariharan Rahul, Wenjun Hu, Dina Katabi, Muriel Medard,
+                                Jon Crowcroft.
+                                <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/xors.pdf">
+                                    XORs in the Air: Practical Wireless Network Coding.</a> In Proc. of ACM SIGCOMM, September 2006.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="7%">10/11</td>
+                        <td align="left" width="25%">Sensor networks
+                            (<a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/gpsr-bvr.pdf">GPSR, BVR</a>)</td>
+                        <td width="67%">Brad Karp, and H. T. Kung.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/17.pdf">
+                                Greedy Perimeter Stateless Routing for Wireless Networks</a>, <em>In
+                                Proc. of MobiCom 2000</em>, Aug. 2000.<br>
+                            Rodrigo Fonseca, Sylvia Ratnasamy, Jerry Zhao, Cheng
+                            <span class="SpellE">Tien</span> <span class="SpellE">Ee</span>,
+                            David Culler, Scott Shenker, Ion <span class="SpellE">Stoica</span>.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/bvr.pdf">BVR: Beacon Vector Routing Scalable
+                                Point-to-Point Routing in Wireless Sensor Networks.</a> In Proc. of
+                            NSDI, May 2005.<font color="#000000" face="Times New Roman"><br>
+                                Suggested reading: Cheng Tien Ee, Rodrigo Fonseca, Sukun Kim, Daekyeong Moon, and
+                                Arsalan Tavakoli, David
+                                Culler, Scott Shenker, Ion Stoica.
+                                A Modular Network Layer for Sensornets. In Proc. of
+                                OSDI, Nov. 2006</font></td>
+                    </tr>
+                    <tr>
+                        <td width="7%">10/16</td>
+                        <td colspan="2" align="center" width="92%">Mid-term</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">10/18</td>
+                        <td align="left" width="25%">Sensor networks
+                            (<a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/sensor-growth-code-storage-brief.ppt">ppt</a>, <a href="http://www.cs.utexas.edu/%7Elili/classes/F06/slides/sensor-growth-code-storage-brief.pdf">pdf</a>)</td>
+                        <td width="67%">
+                            A. Kamra, V. Misra, J. Feldman, D. Rubenstein.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/growth-code.pdf">Growth Codes: Maximizing Sensor Network
+                                Data Persistence</a>. In Proc. of ACM SIGCOMM, Sept. 2006.<font color="#000000" face="arial, verdana,Helvetica,sans-serif" size="-1"><br>
+                        </font>
+                            <font color="#000000" face="Times New Roman">
+                                Cheng Tien Ee, Sylvia
+                                Ratnasamy, Scott Shenker<i>. </i></font>
+                            <font color="#663399" face="Times New Roman">
+                                <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/data-storage.pdf">Practical Data-Centric Storage</a>
+                            </font>
+                            <font face="Times New Roman">
+                                In Proc. of NSDI, May 2006.</font></td>
+                    </tr>
+                    <tr>
+                        <td width="7%">10/23</td>
+                        <td align="left" width="25%">Cellular networks
+                            (<a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/cellular-brief.ppt">ppt</a>, <a href="http://www.cs.utexas.edu/%7Elili/classes/F06/slides/cellular-brief.pdf">pdf</a>)</td>
+                        <td width="67%">Schiller Chapter 4<br>
+                            Zhenyun Zhuang, Tae-Young Chang, Raghupathy Sivakumar, Aravind
+                            Velayutham. <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/A3.pdf">A3: Application-Aware Acceleration for Wireless Data
+                                Networks.</a> In Proc. of ACM MOBICOM, Sept. 2006.</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">10/25</td>
+                        <td align="left" width="25%">Delay tolerant networks</td>
+                        <td width="67%">Yong Wang, Sushant Jain, Margaret Martonosi, and
+                            Kevin Fall.<b> </b>
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/26.pdf">
+                                Erasure Coding Based Routing for Opportunistic Networks.</a> In
+                            Proc. of Workshop on delay tolerant networking and related networks.<br>
+                            A. Seth, D. Kroeker, M. Zaharia, S. Guo, and
+                            S. Keshav. <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/rural-kiosks.pdf"> Low-cost Communication for Rural Internet Kiosks
+                                Using Mechanical Backhaul.</a> In Proc. of ACM Mobicom, Sept. 2006.</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">10/30</td>
+                        <td align="left" width="25%">RFID and WiMax
+                            (<a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/rfid-wimax-brief.ppt">ppt</a>,<a href="http://www.cs.utexas.edu/%7Elili/classes/F06/slides/rfid-wimax-brief.pdf">pdf</a>)</td>
+                        <td width="67%">Schiller Chapter 7.5<br>
+                            M. Kodialam and Thyaga Nandagopal. <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/rfid.pdf">Fast and Reliable
+                                Estimation Schemes in RFID Systems. </a>
+                            In Proc. of ACM Mobicom, Sept. 2006.<br>
+                            A. Ghosh, D. Wolter, J. G. Andrews, and R. Chen.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/wimax.pdf">Broadband Wireless Access with
+                                WiMax/802.16: Current Performance Benchmarks and Future Potential.
+                            </a>IEEE Communication Magazine, Feb. 2005.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" width="99%">Part 3: Wireless network management and
+                            security</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">11/1</td>
+                        <td align="left" width="25%">Localization</td>
+                        <td width="67%">Yu-Chung Cheng, Yatin Chawathe, Anthony LaMarca, and
+                            John Krumm.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/32.pdf">
+                                Accuracy Characterization for Metropolitan-scale Wi-Fi Localization</a>.
+                            In Proc. of ACM MobiSys 2005, June 2005.<br>
+                            Saikat Guha, Rohan Narayan Murty and Emin Gun Sirer.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/33.pdf">
+                                Sextant: A Unified Framework for Node and Event Localization in
+                                Sensor Networks</a>. In Proc. of MobiHoc 2005, May 2005. </td>
+                    </tr>
+                    <tr>
+                        <td width="7%">11/6</td>
+                        <td align="left" width="25%">Wireless network usage studies</td>
+                        <td width="67%">Magdalena Balazinska and Paul Castro.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/28.pdf">
+                                Characterizing Mobility and Network Usage in a Corporate Wireless
+                                Local-Area Network.</a> In Proc. of ACM MobiSys 2003.<br>
+                            Aditya Akella, Glenn Judd, Srinivsan Seshan, and
+                            Peter Steenkiste.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/35.pdf">
+                                Self-Management in Chaotic Wireless Deployments </a>Proc. of ACM
+                            Mobicom 2005. Aug. - Sept. 2005.</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">11/8</td>
+                        <td rowspan="2" align="left" width="25%">Wireless network diagnosis</td>
+                        <td width="67%">Atul Adya, Victor Bahl, Ranveer Chandra, and Lili
+                            Qiu.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/34.pdf">
+                                Architecture and Techniques for Diagnosing Faults in IEEE 802.11
+                                Infrastructure Networks.</a> Proc. of DACM MOBICOM 2004, Sept. 2004.<br>
+                            Ranveer Chandra, Venkata Padmanabhan, Ming Zhang<span style="font-style: italic;">.</span>
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/wifi-profiler.pdf">WiFiProfiler: Cooperative Diagnosis in Wireless LANs.</a>
+                            <span style="font-style: italic; color: rgb(0, 0, 0);">In Proc. of ACM
+			MOBISYS, June 2006.</span></td>
+                    </tr>
+                    <tr>
+                        <td width="7%">11/13</td>
+                        <td width="67%">Y. Cheng, J. Bellardo, P. Benko, A. C. Snoeren, G.
+                            M. Voelker, and S. Savage.
+                            <a title="Jigsaw: Solving the Puzzle of Enterprise 802.11 Analysis" href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/jigsaw.pdf">Jigsaw: Solving the Puzzle of Enterprise 802.11 Analysis.</a>
+                            In Proc. of ACM SIGCOMM, Sept. 2006.<br>
+                            R. Mahajan, M. Rodrig, D. Wetherall, J. Zahorjan.
+                            <a title="Analyzing the MAC-level Behavior of Wireless Networks in the Wild" href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/wit.pdf">Analyzing the MAC-level Behavior of Wireless Networks in the Wild</a>&nbsp;
+                            In Proc. of ACM SIGCOMM, Sept. 2006.<br>
+                            Anmol Sheth, Christian Doerr, Richard Han<span style="font-style: italic;">,</span>
+                            Dirk Grunwald, and Douglas Sicker<span style="color: rgb(136, 170, 136);">.
+			<a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/mojo.pdf">
+			MOJO: A Distributed Physical Layer Anomaly Detection System for
+			802.11 WLANs</a><span style="color: rgb(136, 170, 136);"> </span></span>In Proc.
+                            of ACM MOBISYS, June 2006.</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">11/15</td>
+                        <td rowspan="4" align="left" width="25%">Wireless network security</td>
+                        <td width="67%">Nikita Borisov, Ian Goldberg, and David Wagner.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/38.pdf">
+                                Intercepting Mobile Communications: The Insecurity of 802.11. </a>
+                            Proc. of ACM Mobicom, 2001.<span style="color: rgb(0, 0, 0);"><br>
+			Paramvir Bahl,
+			Ranveer Chandra, Jitendra Padhye, Lenin Ravindranath, Manpreet
+			Singh, Alec Wolman, and Brian Zill<span style="font-style: italic;">.&nbsp;
+			</span></span>
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/DAIR-mobisys2006.pdf">
+                                Enhancing Security of Corporate Wi-Fi Networks Using DAIR</a><span style="color: rgb(136, 170, 136);">.
+			</span><span style="font-style: italic; color: rgb(0, 0, 0);">In Proc.
+			of ACM MOBISYS, June 2006.</span></td>
+                    </tr>
+                    <tr>
+                        <td width="7%">11/20</td>
+                        <td width="67%">Wenyuan Xu, Wade Trappe, Yanyong Zhang, and Timothy
+                            Wood.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/40.pdf">
+                                The Feasibility of launching and detecting jamming attacks in
+                                wireless networks.</a> In Proc. of ACM MobiHoc 2005.<br>
+                            Maxim Raya, Jean-Pierre Hubaux, and Imad Aad.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/41.pdf">
+                                Domino: A System to Detect Greedy Behavior in IEEE 802.11 Hotspots</a>.
+                            Proc. of ACM MobiSys 2004.</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">11/22</td>
+                        <td width="67%">Imad Aad, Jean-Pierre Hubaux, Edward W. Knightly.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/43.pdf">
+                                Denial of Service Resilience in Ad Hoc Networks.</a> In Proc. of ACM
+                            MobiCom 2004, Sept. 2004.<br>
+                            <font color="#000000" face="Times New Roman">Ratul Mahajan, Maya Rodrig, David Wetherall, and John Zahorjan.
+                                <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/cooperation.pdf">
+                                    Sustaining Cooperation in Multi-hop Wireless Networks</a>. In Proc.
+                                of NSDI, May 2005.</font><br>
+                            Yih-Chun Hu, Adrian Perrig, and David Johnson.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/ariadne.pdf">Ariadne: A Secure On-Demand Routing
+                                Protocol for Ad Hoc Networks.</a> In Proc. of ACM Mobicom, Sept.
+                            2002.</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">11/27</td>
+                        <td width="67%">Chuanxiong Guo, Helen J. Wang, and Wenwu Zhu.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/39.pdf">
+                                Smart Phone Attacks and Defenses. </a>Proc. of HotNets III, 2004.<br>
+                            Patrick Traynor, William Enck, Patrick McDaniel, Thomas La Porta.
+                            <a href="courseMaterial/UTEXAS_CS395T_Wireless_Networking/sms-attack.pdf">Mitigating Attacks on Open Functionality in SMS-Capable Cellular
+                                Networks.</a> In Proc. of ACM MOBICOM, Sept. 2006.</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">11/29</td>
+                        <td colspan="2" align="center" width="92%">Project Presentation</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">12/4</td>
+                        <td colspan="2" align="center" width="92%">Project Presentation</td>
+                    </tr>
+                    <tr>
+                        <td width="7%">12/6</td>
+                        <td colspan="2" align="center" width="92%">Project Presentation</td>
+                    </tr>
+                    </tbody></table>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid navbar-bottom">
+        <p class="footer text-center"><br>Copyright &copy; 2003-2017 Xinbing Wang<br>Architect:Jinghao Zhao</p>
+    </div>
+</div>
+</body></html>
