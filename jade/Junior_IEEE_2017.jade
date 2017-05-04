@@ -1,0 +1,26 @@
+extends _base
+
+block vars
+    -var title = "Student Work"
+
+block content
+    include _header
+    div.container
+        h1.text-center.white Student Work
+        br
+        a(href="Junior_IEEE_midterm_2017.html")
+            div.totleType
+                h3
+                    strong Midterm
+                img.autoSize(src="images/pdf.png")
+
+        //a(href="Junior_normal_video.html")
+        //    div.totleType
+        //        h3
+        //            strong Video
+        //        img.autoSize(src="images/video.png")
+        //
+
+    br.clear
+
+    include _footer

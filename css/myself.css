@@ -240,6 +240,10 @@ body{
     font-size: 20px;
 }
 
+.midterm-list {
+    font-weight: 600;
+}
+
 /* -----------------------------------------School List-------------------------*/
 .schoolType{
     margin-left: 20px;
