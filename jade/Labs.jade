@@ -1,0 +1,29 @@
+extends _base
+
+block vars
+    -var title = "Labs"
+
+
+
+block content
+    include _header
+    div.container.bgwhite
+        h1.text-center Labs
+        h3 Lab Manual
+        p
+            |If you want to download the lab manual, please send e-mail to &nbsp;
+            a(href="mailto:xwang8@sjtu.edu.cn") xwang8@sjtu.edu.cn
+            | &nbsp;or&nbsp;
+            a(href="mailto:13-liujiaqi@sjtu.edu.cn") 13-liujiaqi@sjtu.edu.cn
+            |&nbsp;for the password.
+        p
+            strong Lab 1-5 :
+            a.btn.btn-primary(target='_blank' href='http://pan.baidu.com/s/1Jjpq2') Click Here to Download
+        p
+            strong Lab 6-11 :
+            a.btn.btn-primary(target='_blank' href='http://pan.baidu.com/s/1qXxz0LY') Click Here to Download
+
+
+
+
+    include _footer
