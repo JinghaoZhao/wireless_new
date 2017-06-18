@@ -244,6 +244,11 @@ body{
     font-weight: 600;
 }
 
+.short{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 /* -----------------------------------------School List-------------------------*/
 .schoolType{
     margin-left: 20px;
