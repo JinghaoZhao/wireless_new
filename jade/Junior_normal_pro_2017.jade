@@ -1,0 +1,147 @@
+extends _base
+
+
+block vars
+    -var title = "Student Work"
+
+block content
+    include _header
+    include _mixin
+    div.container.proText
+        h1.text-center.white Junior Normal Class
+        br
+        div.panel.panel-primary.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 1
+            div.panel-body
+                +prj_item(name="周志明")(proname="Author-Profiling")(route="material/Final2017/EE/")
+                +prj_item(name="刘蓝晴")(proname="Flow Scheduling in Datacenter Network")(route="material/Final2017/EE/")
+                +prj_item(name="孙媛")(proname="Coded Caching in Tree-Like Network")(route="material/Final2017/EE/")
+                +prj_item(name="刘可")(proname="Simultaneous Localization and Mapping with BLE")(route="material/Final2017/EE/")
+
+        div.panel.panel-info.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 2
+            div.panel-body
+                +prj_item(name="邓丰雨")(proname="Evolving Scholarly Networks: Experiments, Modeling and Analysis")(route="material/Final2017/EE/")
+                +prj_item(name="徐至盈")(proname="Gossip-based Truth Discovery")(route="material/Final2017/EE/")
+                +prj_item(name="李杰峰")(proname="Academic Map Interactive Interface within Leaflet Framework")(route="material/Final2017/EE/")
+                +prj_item(name="王晓星")(proname="Eye-blink Detection Based on SVM")(route="material/Final2017/EE/")
+
+        div.panel.panel-danger.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 3
+            div.panel-body
+                +prj_item(name="侯腾飞")(proname="Throughput-Outage Tradeoff of Wireless One-Hop Caching Networks with Affiliation")(route="material/Final2017/EE/")
+                +prj_item(name="苏靖超")(proname="ThemeRiver: In Search of Trend and Relationships among Field")(route="material/Final2017/EE/")
+                +prj_item(name="孙嘉辰")(proname="An Integrated Indoor BLE-SLAM System")(route="material/Final2017/EE/")
+                +prj_item(name="杨雨诚")(proname=" Best Fingerprints Reporting Strategy on Collocation of Access Points")(route="material/Final2017/EE/")
+
+        div.panel.panel-warning.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 4
+            div.panel-body
+                +prj_item(name="陆昱成")(proname="Probability adjustment for sensitive information diffusion in social network")(route="material/Final2017/EE/")
+                +prj_item(name="丁恒哲")(proname="Implementation of Multi-Access Tag Based on OFDM")(route="material/Final2017/EE/")
+                +prj_item(name="高天昊")(proname="Optimization of References & Normalized and Graphical processing")(route="material/Final2017/EE/")
+                +prj_item(name="吴昊")(proname="Development of authors")(route="material/Final2017/EE/")
+
+        div.panel.panel-success.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 5
+            div.panel-body
+                +prj_item(name="赵璟浩")(proname="Maximum Value Matters: Finding Hot Topics in Scholarly Fields")(route="material/Final2017/EE/")
+                +prj_item(name="黄兆丰")(proname="Application of Image Identification and Processing in Wearable Devices")(route="material/Final2017/EE/")
+                +prj_item(name="贾煜")(proname="Information Diffusion Analysis in Social Networks with Influence Maximizing")(route="material/Final2017/EE/")
+                +prj_item(name="王天祎")(proname="Circuit and Shape Design for Wearable Computing")(route="material/Final2017/EE/")
+
+        div.panel.panel-primary.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 6
+            div.panel-body
+                +prj_item(name="林特")(proname="Creating Knowledge Map for Topic Searching")(route="material/Final2017/EE/")
+                +prj_item(name="吴昕宇")(proname="Social Network De-anonymization with Overlapping Communities")(route="material/Final2017/EE/")
+                +prj_item(name="林顺达")(proname="The Distributed Database Based on Kudu")(route="material/Final2017/EE/")
+                +prj_item(name="陈昶安")(proname="Dynamic Map in Acemap")(route="material/Final2017/EE/")
+
+        div.panel.panel-info.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 7
+            div.panel-body
+                +prj_item(name="顾敏锋")(proname="Research on Spatial and Temporal Dynamics of RSSI for Indoor Positioning")(route="material/Final2017/EE/")
+                +prj_item(name="庄镕滨")(proname="Visualization of Author Information")(route="material/Final2017/EE/")
+                +prj_item(name="侯晨")(proname="Shortest Paths Exploration Between Two Papers Based on Citation Network")(route="material/Final2017/EE/")
+                +prj_item(name="俞宗伯")(proname="Bluetooth cochlea")(route="material/Final2017/EE/")
+
+        div.panel.panel-warning.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 8
+            div.panel-body
+                +prj_item(name="李豪")(proname="Reconstruct Radio Map for Indoor Localization")(route="material/Final2017/EE/")
+                +prj_item(name="孟正凌")(proname="Object Location Indoors")(route="material/Final2017/EE/")
+                +prj_item(name="黄汇")(proname="Website Frontier Design")(route="material/Final2017/EE/")
+                +prj_item(name="刘阅洲")(proname="Database optimization on Spark")(route="material/Final2017/EE/")
+
+        div.panel.panel-danger.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 9
+            div.panel-body
+                +prj_item(name="王楠")(proname="Generalized Model For Core Percolation in Interdependent Networks")(route="material/Final2017/EE/")
+                +prj_item(name="詹诗渊")(proname="Hive Queries Optimization Based on Acemap")(route="material/Final2017/EE/")
+                +prj_item(name="顾健喆")(proname="Hybrid-Based Academic Recommender System")(route="material/Final2017/EE/")
+                +prj_item(name="彭长欢")(proname="Network PDF file unstructured information extraction")(route="material/Final2017/EE/")
+
+        div.panel.panel-success.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 10
+            div.panel-body
+                +prj_item(name="童迅")(proname="Indoor localization based on RSS")(route="material/Final2017/EE/")
+                +prj_item(name="吕飞霄")(proname="Facial Paralysis Smart Glasses")(route="material/Final2017/EE/")
+                +prj_item(name="边登科")(proname="Indoor Relative Position Analysis Based on MDS")(route="material/Final2017/EE/")
+                +prj_item(name="朱乐岩")(proname="Map-Fi Tag Receiver part")(route="material/Final2017/EE/")
+
+        div.panel.panel-primary.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 11
+            div.panel-body
+                +prj_item(name="方曦")(proname="Small-world phenomena in paper reference networks")(route="material/Final2017/EE/")
+                //+prj_item(name="彭春皓")(proname="")(route="material/Final2017/EE/")
+                +prj_item(name="张希伦")(proname="Research on Community Detection and Community Correlation ofAcademic Large Data")(route="material/Final2017/EE/")
+                +prj_item(name="徐梓嘉")(proname="Visualization of Similiar Paper")(route="material/Final2017/EE/")
+
+        div.panel.panel-info.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 12
+            div.panel-body
+                +prj_item(name="徐家盛")(proname="A Coding Framework for Distributed Computing with Two Types of Servers")(route="material/Final2017/EE/")
+                +prj_item(name="刘炯")(proname="Modeling I I nformation Diffusion in Multi- - Sensitive Networks")(route="material/Final2017/EE/")
+                +prj_item(name="杨嘉诚")(proname="Information Visualization Based On Various Tools")(route="material/Final2017/EE/")
+                +prj_item(name="于逸尘")(proname="Software Development for iblink")(route="material/Final2017/EE/")
+
+        div.panel.panel-success.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 13
+            div.panel-body
+                +prj_item(name="刘栋")(proname="Dynamic Maps in Acemap")(route="material/Final2017/EE/")
+                +prj_item(name="杨再欣")(proname="Auto-adaptive Web Layout of Acemap Based on Mobile Client")(route="material/Final2017/EE/")
+                +prj_item(name="高楚枫")(proname="Application of Coordinate Mapping in Data Application of coordinate mapping in data visualization Visualization")(route="material/Final2017/EE/")
+                //+prj_item(name="彭勋")(proname="")(route="material/Final2017/EE/")
+
+
+        br.clear
+
+
+    include _footer

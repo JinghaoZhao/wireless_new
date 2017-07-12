@@ -1,0 +1,89 @@
+extends _base
+
+
+block vars
+    -var title = "Student Work"
+
+block content
+    include _header
+    include _mixin
+    div.container.proText
+        h1.text-center.white Junior IEEE Class
+        br
+        div.panel.panel-primary.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 1
+            div.panel-body
+                +prj_item(name="王瑞吉")(proname="Visualize Relations Between Papers")(route="material/Final2017/IEEE/")
+                //+prj_item(name="樊明华")(proname="")(route="material/Final2017/IEEE/")
+                //+prj_item(name="陈怡峰")(proname="")(route="material/Final2017/IEEE/")
+                +prj_item(name="孔令坤")(proname="Big Data Analysis on Cross-domain Scholarly Data")(route="material/Final2017/IEEE/")
+                +prj_item(name="汪博")(proname="Wandering Between Close and Apart: Are Scholarly Domains Crossable")(route="material/Final2017/IEEE/")
+
+
+        div.panel.panel-success.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 2
+            div.panel-body
+                +prj_item(name="赵人杰")(proname="MAP-FI: An Ultra-low Power Multiple Access IoT System Based on Commodity Wi-Fi")(route="material/Final2017/IEEE/")
+                //+prj_item(name="王伟涛")(proname="")(route="material/Final2017/IEEE/")
+                +prj_item(name="唐宇新")(proname="ROCCSS: A Real-time Online Coded Caching Simulator")(route="material/Final2017/IEEE/")
+                +prj_item(name="廖一鸣")(proname="Optimization of Response speed of Acemap")(route="material/Final2017/IEEE/")
+
+        div.panel.panel-info.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 3
+            div.panel-body
+                +prj_item(name="乔卓彪")(proname="Data visualization in Network Economics")(route="material/Final2017/IEEE/")
+                +prj_item(name="黄昊宸")(proname="Reconstruct Radio Map with Automatically Constructed Gaussian Process for Localization")(route="material/Final2017/IEEE/")
+                //+prj_item(name="姚佳乐")(proname="")(route="material/Final2017/IEEE/")
+                +prj_item(name="田晓亮")(proname="Diversify Search Results with Facet Indexing")(route="material/Final2017/IEEE/")
+
+
+        div.panel.panel-warning.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 4
+            div.panel-body
+                +prj_item(name="于海漩")(proname="Mobile Internet")(route="material/Final2017/IEEE/")
+                +prj_item(name="刘汉卿")(proname="Some optimizations of WiFi-Based Indoor Positioning")(route="material/Final2017/IEEE/")
+                +prj_item(name="莫双嘉")(proname="Indoor Localization System for Libraries on Android Platform")(route="material/Final2017/IEEE/")
+                +prj_item(name="董镕诚")(proname="Intelligent Home Appliance")(route="material/Final2017/IEEE/")
+
+        div.panel.panel-danger.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 5
+            div.panel-body
+                +prj_item(name="黄垚玮")(proname="Dynamic Community Detection with Normal Distribution in Temporal Social Networks")(route="material/Final2017/IEEE/")
+                +prj_item(name="林禹臣")(proname="Dynamic Community Detection with Normal Distribution in Temporal Social Networks")(route="material/Final2017/IEEE/")
+                +prj_item(name="宋肇哲")(proname="Dynamic Community Detection with Normal Distribution in Temporal Social Networks")(route="material/Final2017/IEEE/")
+                //+prj_item(name="汪博")(proname="Wandering Between Close and Apart: Are Scholarly Domains Crossable")(route="material/Final2017/IEEE/")
+
+        div.panel.panel-primary.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 6
+            div.panel-body
+                +prj_item(name="张福明")(proname="Improvements on Eye-blink Detection for iBlink")(route="material/Final2017/IEEE/")
+                +prj_item(name="杭盖")(proname="Incentivize Online Multi-class Crowd Labeling under Budget Constraint")(route="material/Final2017/IEEE/")
+                +prj_item(name="撖朝润")(proname="Visualization of the Relations Between A Certain Paper and Its References and Citations in Acemap")(route="material/Final2017/IEEE/")
+                //+prj_item(name="田晓亮")(proname="Diversify Search Results with Facet Indexing")(route="material/Final2017/IEEE/")
+
+        div.panel.panel-success.pptType
+            div.panel-heading
+                h3.panel-title
+                    strong Group 7
+            div.panel-body
+                +prj_item(name="杨叶新")(proname="Indoor Asset Tracking Technique")(route="material/Final2017/IEEE/")
+                +prj_item(name="鲁旭彤")(proname="WiFi-Based Indoor Positioning System")(route="material/Final2017/IEEE/")
+                +prj_item(name="黄子砾")(proname="Gaussian Process based Radio Map Recovery")(route="material/Final2017/IEEE/")
+
+
+        br.clear
+
+
+    include _footer

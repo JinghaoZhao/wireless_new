@@ -1,0 +1,7 @@
+mixin prj_item()
+    span.glyphicon.glyphicon-education.proText      #{attributes.name}: #{attributes.proname} &nbsp;
+        img.proIcon(src="images/pptx.png")
+        a.label.label-default(href="#{attributes.route}#{attributes.name}-slides.pdf") ppt
+        img.proIconpdf(src="images/pdf.png")
+        a.label.label-info(href="#{attributes.route}#{attributes.name}-report.pdf") report
+
