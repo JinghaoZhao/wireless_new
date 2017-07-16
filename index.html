@@ -8,27 +8,42 @@
 <link rel="stylesheet" href="css/myself.css" type="text/css" />
 <title>Homepage</title><script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/myself.js"></script>
 </head>
 <body id="top">
   <div class="widthMax">
     <nav class="navbar navbar-default">
       <!--navbar-header-->
-      <div class="navbar-header"><a href="index.html" class="navbar-brand">Wireless Course</a></div>
-      <!--links-->
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="GeneralInfo.html" class="nav-link button button-3d button-primary">General Info</a></li>
-          <li><a href="studentwork.html" class="nav-link button button-3d button-info">Student Work</a></li>
-          <li><a href="schoolList.html" class="nav-link button button-3d button-caution">School List</a></li>
-          <li><a href="Labs.html" class="nav-link button button-3d button-highlight">Labs</a></li>
-          <li><a href="Schedule.html" class="nav-link button button-3d button-action">Schedule & Requirements</a></li>
-          <li><a href="Projects.html" class="nav-link button button-3d button-yellow">Projects</a></li>
-          <li><a href="Resources.html" class="nav-link button button-3d button-caution">Resources</a></li>
-        </ul>
+      <div class="navbar-header"><img src="images/slidelogo.png" class="headerImg"><a href="index.html" class="navbar-brand">
+          <!--p.headerText1 SHANGHAI JIAO TONG UNIVERSITY-->
+          <p class="headerText2">|WIRELESS <br> |COUSRE</p></a>
+        <!--links-->
+      </div>
+      <div id="nav">
+        <div class="container center-block">
+          <ul class="nav nav-tabs nav-justified">
+            <li><a href="index.html" class="nav-link"><span class="glyphicon glyphicon-home">&nbsp;</span><strong>Home</strong></a></li>
+            <li><a href="GeneralInfo.html" class="nav-link"><span class="glyphicon glyphicon-info-sign">&nbsp;</span><strong>General Info</strong></a></li>
+            <li><a href="studentwork.html" class="nav-link"><span class="glyphicon glyphicon-flag">&nbsp;</span><strong>Student Work</strong></a></li>
+            <li><a href="schoolList.html" class="nav-link"><span class="glyphicon glyphicon-th">&nbsp;</span><strong>School List</strong></a></li>
+            <li><a href="Labs.html" class="nav-link"><span class="glyphicon glyphicon-wrench">&nbsp;</span><strong>Labs</strong></a></li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span class="glyphicon glyphicon-option-horizontal">&nbsp;</span><strong>More</strong></a>
+              <ul class="dropdown-menu">
+                <li><a href="Schedule.html" class="nav-link"><span class="glyphicon glyphicon-blackboard">&nbsp;</span><strong>Schedule</strong></a></li>
+                <li><a href="Projects.html" class="nav-link"><span class="glyphicon glyphicon-grain">&nbsp;</span><strong>Projects</strong></a></li>
+                <li><a href="Resources.html" class="nav-link"><span class="glyphicon glyphicon-cloud-download">&nbsp;</span><strong>Resources</strong></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class="container-fluid indexPage">
-      <div class="alert alert-info whats-new"><em><strong>What's New : &nbsp;</strong><span>Add World-wide Schools' courses to School List and update our course information !</span></em></div>
+      <!--div.alert.alert-info.whats-new
+      em
+          strong What's New : &nbsp;
+          span Add World-wide Schools' courses to School List and update our course information !
+      -->
       <div class="container">
         <div class="col-xs-6 col-xs-push-1 indexText text-left">
           <h1><strong>Wireless Communication and Mobile Networks</strong></h1><br>
@@ -45,11 +60,30 @@
             </div><br class="clear">
             <h4>Textbook:<strong>《Introduction to Mobile Internet》</strong>has been published !<br></h4></a></div>
       </div>
-      <div class="container index-block-group">
+      <hr>
+      <div class="container">
         <div class="col-xs-4"><a href="GeneralInfo.html" class="zoomimg indexBlockButton"><img src="images/homepage/courseinfo.jpg" class="img-thumbnail autoSize"></a></div>
+        <div class="col-xs-8">
+          <h2 class="text-center"><span class="glyphicon glyphicon-info-sign">&nbsp;</span><strong>Course Information</strong></h2>
+          <p class="itemText">The basic principles of wireless communication are provided and multiple different applications of wireless communication system and mobile networks are introduced, including cellular networks, mobile IP, wireless LAN, satellite systems, ad-hoc networks, sensor networks, wireless PAN, etc.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="container">
         <div class="col-xs-4"><a href="studentwork.html" class="zoomimg indexBlockButton"><img src="images/homepage/studentwork.png" class="img-thumbnail autoSize"></a></div>
+        <div class="col-xs-8">
+          <h2 class="text-center"><span class="glyphicon glyphicon-flag">&nbsp;</span><strong>Student Work</strong></h2>
+          <p class="itemText">We collect and sort out all the homework from 2008 to now. Ten years accumulation, ten years precipitation. Many student achievements have been published in internationally renowned journals and conferences. We are committed to the combination of teaching and practice, and always stand in the forefront of the field.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="container">
         <div class="col-xs-4"><a href="schoolList.html" class="zoomimg indexBlockButton"><img src="images/homepage/schoollist.jpg" class="img-thumbnail autoSize"></a></div>
-      </div><br><br>
+        <div class="col-xs-8">
+          <h2 class="text-center"><span class="glyphicon glyphicon-th">&nbsp;</span><strong>School List</strong></h2>
+          <p class="itemText">We combine dozens of well-known universities nationwide and collect world-famous courses to jointly build wireless courses platform. From here, you can find a wider range of curriculum resources, more convenient course management, and more systematic curriculum display.</p>
+        </div>
+      </div>
       <div class="container-fluid navbar-bottom">
         <p class="footer text-center"><br>Copyright &copy; 2003-2017 Xinbing Wang<br>Architect:Jinghao Zhao</p>
       </div>

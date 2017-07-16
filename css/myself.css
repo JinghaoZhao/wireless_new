@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Book Antiqua";
+    src: url("../fonts/Book Antiqua.ttf");
+}
+
+
 .col-center-block {
     float: none;
     display: block;
@@ -12,10 +18,9 @@
 }
 
 body{
-    /*background-color: #dddddd;*/
-    /*background: url("../images/paperback.png") repeat;*/
-    /*background: url("../images/wirelessIndex.jpg") repeat-y;*/
-    background: linear-gradient(75deg,  rgba(2, 190, 255, 0.99),#06ffab);
+    font-family: "Open Sans", "Segoe UI", "Microsoft Yahei", "Arial" ;
+    background: url(../images/background.jpg) repeat left top;
+    /*word-spacing: 0.1em;*/
 }
 
 .bgwhite{
@@ -27,6 +32,45 @@ body{
     clear: both;
 }
 /*------------------------------------header--------------------------------*/
+#nav{
+    background-color: whitesmoke;
+    width: 100%;
+}
+#nav div{
+    clear: both;
+    margin: 0 auto;
+    max-width: 1000px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.navbar-fixed{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+}
+
+.navbar-header{
+    width: 100%;
+    padding: 50px 0 50px 200px;
+    background: url(../images/nei_top.jpg);
+    background-size: cover;
+}
+
+
+.headerText2{
+    font-family: "Book Antiqua";
+    font-style: oblique;
+    font-size: 2.5em;
+    font-weight: 400;
+    color: white;
+    line-height: 40px;
+}
+
+.headerImg{
+    float: left;
+    height: 110px;
+}
 .button-3d{
     color: black;
 }
@@ -60,7 +104,7 @@ body{
 /*indexPage----------------------------------------------------------------------*/
 .widthMax {
     /*width: 80%;*/
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     float: none;
     display: block;
     margin-left: auto;
@@ -68,7 +112,7 @@ body{
 }
 
 .indexPage {
-    background: url("../images/homepage/mt.jpg") no-repeat;
+    /*background: url("../images/homepage/mt.jpg") no-repeat;*/
     opacity: 1.0;
     /*background: transparent;*/
     /*background: linear-gradient(75deg, #00E39F, #00C4E1);*/
@@ -81,9 +125,7 @@ body{
     z-index: -2;
 }
 .indexText{
-    /*width: 40%;*/
     position: relative;
-    /*padding-left: 100px;*/
     padding-top: 70px;
 }
 .indexText h1 {
@@ -129,6 +171,12 @@ body{
     margin: 5px;
     font-size: large;
 }
+
+.itemText{
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
 /*Student Work-------------------------------------------------------------------------*/
 .classType{
     margin-left: 40px;

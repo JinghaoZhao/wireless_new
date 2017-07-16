@@ -1,23 +1,51 @@
 nav.navbar.navbar-default
         //navbar-header
         div.navbar-header
-            a.navbar-brand(href="index.html") Wireless Course
+            img.headerImg(src="images/slidelogo.png")
+            a.navbar-brand(href="index.html")
+                //p.headerText1 SHANGHAI JIAO TONG UNIVERSITY
+                p.headerText2 |WIRELESS <br> |COUSRE
 
-        //links
-        div.collapse.navbar-collapse
-            ul.nav.navbar-nav.navbar-right
-                li
-                    a.nav-link.button.button-3d.button-primary(href="GeneralInfo.html") General Info
-                li
-                    a.nav-link.button.button-3d.button-info(href="studentwork.html") Student Work
-                li
-                    a.nav-link.button.button-3d.button-caution(href="schoolList.html") School List
-                li
-                    a.nav-link.button.button-3d.button-highlight(href="Labs.html") Labs
-                li
-                    a.nav-link.button.button-3d.button-action(href="Schedule.html") Schedule & Requirements
-                li
-                    a.nav-link.button.button-3d.button-yellow(href="Projects.html") Projects
-                li
-                    a.nav-link.button.button-3d.button-caution(href="Resources.html") Resources
+            //links
+        div#nav
+            div.container.center-block
+                ul.nav.nav-tabs.nav-justified
+                    li
+                        a.nav-link(href="index.html")
+                            span.glyphicon.glyphicon-home &nbsp;
+                            strong Home
+                    li
+                        a.nav-link(href="GeneralInfo.html")
+                            span.glyphicon.glyphicon-info-sign &nbsp;
+                            strong General Info
+                    li
+                        a.nav-link(href="studentwork.html")
+                            span.glyphicon.glyphicon-flag &nbsp;
+                            strong Student Work
+                    li
+                        a.nav-link(href="schoolList.html")
+                            span.glyphicon.glyphicon-th &nbsp;
+                            strong School List
+                    li
+                        a.nav-link(href="Labs.html")
+                            span.glyphicon.glyphicon-wrench &nbsp;
+                            strong Labs
+
+                    li.dropdown
+                        a.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false")
+                            span.glyphicon.glyphicon-option-horizontal &nbsp;
+                            strong More
+                        ul.dropdown-menu
+                            li
+                                a.nav-link(href="Schedule.html")
+                                    span.glyphicon.glyphicon-blackboard &nbsp;
+                                    strong Schedule
+                            li
+                                a.nav-link(href="Projects.html")
+                                    span.glyphicon.glyphicon-grain &nbsp;
+                                    strong Projects
+                            li
+                                a.nav-link(href="Resources.html")
+                                    span.glyphicon.glyphicon-cloud-download &nbsp;
+                                    strong Resources
 
