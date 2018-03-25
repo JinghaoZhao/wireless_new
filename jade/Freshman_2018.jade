@@ -1,0 +1,28 @@
+extends _base
+
+block vars
+    -var title = "Student Work"
+
+block content
+    include _header
+    div.container
+        h1.text-center.white Student Work
+        br
+
+        a(href="Freshman_pro_2018.html")
+            div.totleType
+                h3
+                    strong PPT & Report
+                img.autoSize(src="images/pptx.png")
+
+
+        a(href="Freshman_video_2018.html")
+            div.totleType
+                h3
+                    strong Video
+                img.autoSize(src="images/video.png")
+
+
+    br.clear
+
+    include _footer
